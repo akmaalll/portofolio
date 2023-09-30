@@ -6,6 +6,7 @@
   @vite('resources/css/app.css')
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
 
 </head>
 <body class="bg-gray-900">
@@ -22,8 +23,8 @@
   <div class="flex text-gray-600 ">
       <div class="w-1/2 pl-36 grid place-content-center">
         <h1 class="text-orange-600 font-bold text-2xl py-2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">Welcome</h1>
-        <h1 class="text-white font-bold text-4xl pb-2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="700">I AM WEB DESIGNER</h1>
-        <p class="text-gray-400 pb-2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">sdfbdsfbhsdfhsdvndfbgfdbgdbfhvdfbdvbxcnxnvbxbnhvgggfhghjgmhjmhjhvgvgvhgvjhfsdvfsvdh</p>
+        <h1 class="text-white font-bold text-4xl pb-2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="700">I AM <span id="element"></span></h1>
+        <p class="text-gray-400 pb-2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">web portofolio yang merupakan blablablabla cukuruku bukru bukru</p>
         <div class="flex gap-5 " data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000">
             <img src="{{asset('3d/fb.png')}}" class="w-10" alt="">
             <img src="{{asset('3d/ig.png')}}" class="w-10" alt="">
@@ -41,28 +42,28 @@
     <div class="flex justify-around">
         <div class="grid place-content-center bg-gray-700 text-center  rounded-lg px-5 pb-2">
             <div class="grid place-content-center">
-                <img src="{{asset('3d/ig.png')}}" class="w-20" alt="">
+                <img src="{{asset('3d/pr.jpg')}}" class="w-20" alt="">
             </div>
             <h1 class="font-bold">penjualan</h1>
             <p>website ini  blalalalalalal</p>
         </div>
         <div class="grid place-content-center bg-gray-700 text-center  rounded-lg px-5 pb-2">
             <div class="grid place-content-center">
-                <img src="{{asset('3d/ig.png')}}" class="w-20" alt="">
+                <img src="{{asset('3d/pr.jpg')}}" class="w-20" alt="">
             </div>
             <h1 class="font-bold">penjualan</h1>
             <p>website ini  blalalalalalal</p>
         </div>
         <div class="grid place-content-center bg-gray-700 text-center  rounded-lg px-5 pb-2">
             <div class="grid place-content-center">
-                <img src="{{asset('3d/ig.png')}}" class="w-20" alt="">
+                <img src="{{asset('3d/pr.jpg')}}" class="w-20" alt="">
             </div>
             <h1 class="font-bold">penjualan</h1>
             <p>website ini  blalalalalalal</p>
         </div>
         <div class="grid place-content-center bg-gray-700 text-center  rounded-lg px-5 pb-2">
             <div class="grid place-content-center">
-                <img src="{{asset('3d/ig.png')}}" class="w-20" alt="">
+                <img src="{{asset('3d/pr.jpg')}}" class="w-20" alt="">
             </div>
             <h1 class="font-bold">penjualan</h1>
             <p>website ini  blalalalalalal</p>
@@ -78,5 +79,17 @@
   <script>
     AOS.init();
   </script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- Setup and start animation! -->
+<script>
+  var typed = new Typed('#element', {
+    strings: ["Lily","Web Devoloper"],
+    typeSpeed: 50,
+    backSpped: 50,
+    loop:true
+  });
+</script>
 </body>
 </html>
